@@ -1,0 +1,44 @@
+.regiSec {
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    border-radius: 5px;
+    padding: 3rem;
+    justify-content: space-between;
+}
+
+.regiSec .text p {
+    color: black;
+}
+
+.regiSec .text .para {
+    font-size: 13px;
+}
+
+.regiSec .text .subtitle {
+    font-weight: 900;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.regiSec button {
+    background: #000;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all ease-in-out 300ms;
+}
+
+.regiSec button:hover {
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width:1024px) {
+    .regiSec {
+        flex-direction: column;
+    }
+
+    .regiSec .text p {
+        text-align: center;
+    }
+}

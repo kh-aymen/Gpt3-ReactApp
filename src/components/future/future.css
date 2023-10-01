@@ -1,0 +1,44 @@
+.futureS {
+    align-items: flex-start;
+}
+
+.futureRightSite .title {
+    font-size: 40px;
+    width: 95%;
+}
+
+.futureRightSite .para {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.futureLeftSite>div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.futureLeftSite>div>h1 {
+    flex: 1;
+}
+
+.futureLeftSite>div>p {
+    flex: 1;
+    text-align: justify;
+}
+
+@media screen and (max-width:1024px) {
+    .futureS {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .futureLeftSite>div {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+}

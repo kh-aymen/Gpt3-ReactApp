@@ -1,0 +1,90 @@
+.join {
+    width: 70%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.join .title {
+    text-align: center;
+}
+
+.join button {
+    background: transparent;
+    border: 1px solid wheat;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer>div {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer>div>div {
+    flex: 1;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    color: rgba(255, 251, 244, 0.627);
+    padding: 1rem;
+    cursor: pointer;
+    transition: all ease-in-out 250ms;
+}
+
+.footer ul li:first-child {
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.footer ul li:hover {
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+
+}
+
+.left .logo .subtitle {
+    font-size: 30px;
+    font: 900;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width:1200px) {
+    .footer {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer>div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .footer>div {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+}

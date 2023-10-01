@@ -1,0 +1,136 @@
+.defiS {
+    margin: auto;
+
+}
+
+.defiContainer {
+    background-image: linear-gradient(to right bottom, #0f4278, #0c3c6f, #093766, #06315d, #042c54);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    box-shadow: 1px 1px 17px 10px #03213e6d;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+    padding: 3rem;
+}
+
+.topLine {
+    position: relative;
+}
+
+.topLine span {
+    position: absolute;
+    width: 59px;
+    height: 2px;
+    left: 0px;
+    top: -17px;
+    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+}
+
+.defiContainer>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.defiContainer .partOne p {
+    width: 60%;
+    text-align: justify;
+}
+
+.defiContainer .partOne h1 {
+    font-size: 30px;
+    letter-spacing: 0;
+}
+
+.defiContainer .partTow,
+.defiContainer .partOne {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.defiContainer .partTow h1 {
+    font-size: 35px;
+    width: 50%;
+}
+
+.defiContainer .partTow p {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.partThree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.partThree>div {
+    flex: 1;
+    min-width: 350px;
+    max-width: 458px;
+}
+
+@media screen and (max-width:900px) {
+
+    .defiContainer .partTow,
+    .defiContainer .partOne {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .defiContainer .partOne {
+        gap: 2rem;
+    }
+
+    .defiContainer .partOne p {
+        width: 100%;
+        text-align: left;
+    }
+
+    .defiContainer .partTow h1 {
+        font-size: 35px;
+        width: 100%;
+    }
+
+    .defiContainer .partTow p {
+        color: var(--orange);
+        cursor: pointer;
+    }
+
+    .partThree {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+
+    .partThree>div {
+        flex: 1;
+        min-width: 350px;
+        max-width: 458px;
+    }
+
+    .partThree>div {
+        min-width: 290px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .defiContainer {
+        padding: 1rem;
+    }
+
+    .partThree>div p {
+        font-size: 11px;
+    }
+}

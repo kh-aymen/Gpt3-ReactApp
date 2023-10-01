@@ -1,0 +1,121 @@
+@media screen and (min-width:1250px) {
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 18px;
+        grid-row-gap: 18px;
+
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 3 / 3;
+    }
+
+    .div2 {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+    .div3 {
+        grid-area: 1 / 4 / 2 / 5;
+    }
+
+    .div4 {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    .div5 {
+        grid-area: 2 / 4 / 3 / 5;
+    }
+
+    .parent>div .text {
+        background-color: #001c38;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+    }
+
+    .parent>div .img>img {
+        width: 400px;
+        object-fit: cover;
+    }
+
+    .parent>.div1 .img>img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .parent>.div1 .text {
+        height: 505px;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 18px;
+        grid-row-gap: 18px;
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .div2 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .div3 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .div4 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .div5 {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+
+    .parent>div {
+        background-color: #001c38;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .parent>div .text {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .parent>div .text p {
+        text-align: center;
+    }
+
+    .parent>div .img>img {
+        width: 500px;
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .parent>div .img>img {
+        width: 259px;
+        height: 130px;
+    }
+
+    .parent>div .text .subtitle {
+       font-size: 18px;
+    }
+
+}

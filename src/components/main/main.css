@@ -1,0 +1,105 @@
+.mainS {
+    height: auto;
+}
+
+.container {
+    padding-top: 2rem;
+}
+
+.container .content {
+    gap: 2rem;
+}
+
+.container .content h1,
+.container .content p {
+    width: 90%;
+}
+
+.container .content form {
+    width: 100%;
+}
+
+.container .content form input {
+    width: 75%;
+    border: none;
+    outline: none;
+    background-color: #3D6184;
+    padding: 1rem;
+    padding-left: 1.7rem;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.container .content form input::placeholder {
+    color: #797a84;
+}
+
+.container .content form button {
+    padding: 1rem;
+    border-radius: 0 4px 4px 0;
+}
+
+.container .content .people {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.container .content .people img {
+    width: 200px;
+}
+
+.container:last-child img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width:1140px) {
+    .container .content form input {
+        width: 60%;
+        padding: 0.7rem;
+    }
+
+    .container .content form button {
+        padding: 0.7rem;
+        border-radius: 0 4px 4px 0;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container .content form input {
+        width: 80%;
+    }
+
+    .container:last-child img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container .content form input {
+        width: 60%;
+    }
+
+    .container .content .people {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .container .content .people img {
+        width: 190px;
+    }
+
+    .container:last-child img {
+        width: 300px;
+    }
+
+}

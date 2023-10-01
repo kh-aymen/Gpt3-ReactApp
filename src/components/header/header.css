@@ -1,0 +1,139 @@
+.header {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.header .navbar p {
+    color: var(--white);
+    font-size: larger;
+    font-weight: bold;
+}
+
+.header .navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.header .navbar ul li {
+    padding: 5px;
+}
+
+.header .navbar ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 300;
+    font-size: 16px;
+    transition: all 300ms ease-in-out;
+}
+
+.header .navbar ul li:hover a {
+    color: var(--orange);
+}
+
+.header .buttons {
+    gap: 1rem;
+}
+
+button {
+    padding: 0.7rem;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    color: var(--white);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+
+.btn-Sign-in {
+    background-color: transparent;
+}
+
+.btn-Sign-in:hover {
+    background-color: #FF4820;
+}
+
+.btn-Sign-up {
+    background-color: #FF4820;
+}
+
+.btn-Sign-up:hover {
+    background-color: transparent;
+}
+
+.headerResponsvie {
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    .header {
+        display: none;
+    }
+
+    .headerResponsvie {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .headerResponsvie .shows {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .headerResponsvie .shows p,
+    .headerResponsvie .shows svg {
+        color: var(--white);
+        font-size: larger;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .headerResponsvie .shows svg {
+        font-size: 2rem;
+    }
+
+    .collaps ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1rem;
+        list-style: none;
+    }
+
+    .collaps ul li {
+        padding: 0.7rem;
+    }
+
+    .collaps ul li a {
+        text-decoration: orange underline;
+        color: var(--white);
+        transition: all ease-in-out 300ms;
+    }
+
+    .collaps ul li a:hover {
+        color: var(--orange);
+    }
+
+    .collaps .buttons {
+        margin-top: 1rem;
+    }
+
+    .collaps .buttons button {
+        font-size: 1.2rem;
+    }
+
+}
+
