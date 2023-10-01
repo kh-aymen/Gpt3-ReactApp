@@ -1,5 +1,5 @@
 {
-  "homepage": "https://DIZAD99.github.io/GPT-3_ReactApp",
+  "homepage": "https://DIZAD99.github.io/Gpt3-ReactApp",
   "name": "gpt3",
   "version": "0.1.0",
   "private": true,
@@ -21,8 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
